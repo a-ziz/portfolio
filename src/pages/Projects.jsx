@@ -19,14 +19,19 @@ const Projects = () => {
           demo="https://cryptolist-8c1cd.web.app/"
         />
         <Project
-          name="Photography Website"
-          description="This is a photography website that displays an album, photographer's information and contact to services. "
-          technologies="HTML5, CSS3, JavaScript"
-        />
-        <Project
           name="Data Service Landing Page"
           description="A responsive for all devices landing page that displays information about a data service company. "
           technologies="React, TailwindCSS, SASS"
+        />
+        <Project
+          name="Blogs Website"
+          description="This is a blogs website that consists of blog posts that can be clicked to viewed. Content creator can edit the blogs easily through ContentFul CMS"
+          technologies="React, JavaScript, SCSS, Gatsby, GraphQL, Contentful CMS"
+        />
+        <Project
+          name="Photography Website"
+          description="This is a photography website that displays an album, photographer's information and contact to services. "
+          technologies="HTML5, CSS3, JavaScript"
         />
       </div>
       <div>
@@ -37,7 +42,7 @@ const Projects = () => {
           <Project
             name="VB.NET Project"
             description="in this project I made a customer invoice application using Visual Basic on .NET framework. This project uses the CRUD method to create a customer, customer's invoices, and it includes date/time ."
-            technologies="Visual Basic, .NET Framework"
+            technologies="Visual Basic, XML database, C#, .NET Framework"
           />
           <Project
             name="Java Calculator GUI APP"
@@ -46,15 +51,15 @@ const Projects = () => {
           />
 
           <Project
-            name="Bouncing Ball Game"
+            name="Java Bouncing Ball Game"
             description="Bouncing Ball Game using Java GUI library, a ball will be bouncing on the walls and player must avoid it touching the bottom of screen to score points"
-            technologies="Java, Java swing library"
+            technologies="Java, Java library"
           />
-          <Project
+          {/* <Project
             name="Command Line Book Library"
             description="A C++ command line project that searches, updates books by title, author and ISBN"
             technologies="C++"
-          />
+          /> */}
         </div>
       </div>
       <div id="contact">

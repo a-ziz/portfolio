@@ -15,7 +15,6 @@ module.exports = {
         secondary: "var(--color-text-secondary)",
         btnText: "var(--color-bg-secondary)",
         hoverblue: "var(--color-text-hoverblue)",
-        pararaph: "var(--color-text-pararaph)",
       },
       borderColor: {
         primary: "var(--color-text-primary)",
