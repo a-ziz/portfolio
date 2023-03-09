@@ -18,10 +18,10 @@ const Home = () => {
     <div className="app-style border-none" id="home">
       <div className="grid items-center">
         <div className="mx-8 md:py-4">
-          <h1 className="py-4 text-xl md:text-5xl font-bold font-mono">
+          <h1 className="my-4 text-2xl sm:text-4xl font-thin font-mono">
             Front-End Web-Developer
           </h1>
-          <p className="sm:text-2xl mb-8 font-sans leading-7 sm:leading-[38px]">
+          <p className="font-thin sm:text-2xl mb-8 sm:mb-12 font-sans leading-7 sm:leading-[38px]">
             {" "}
             I am a web developer with 2 years of experience in building and
             maintaining websites. I have strong understanding of HTML, CSS, and
@@ -43,10 +43,10 @@ const Home = () => {
           <h2 className="font-bold my-6 uppercase text-accent text-2xl sm:4xl">
             Skills & Technologies
           </h2>
-          <p className="text-left my-4 sm:text-2xl leading-8 sm:leading-[50px] max-w-[800px]">
+          <p className="text-left font-thin my-4 mx-6 sm:text-2xl leading-8 sm:leading-[50px] max-w-[800px]">
             I have worked with a range of technologies in the web development
-            word. I have a passion for design systems, web accessibility, smooth
-            user interface.
+            world. I have a passion for design systems, web accessibility, and
+            smooth user interface.
           </p>
           <ul className="grid gap-8 grid-cols-3 py-4 my-8 items-center">
             <li className="grid grid-rows-2">

@@ -22,6 +22,8 @@
   --color-border-primary: #ffffff;
   --color-text-hoverblue: #317dfff2;
   --color-border-secondary: #454646;
+  --color-bg-icon:#0629c7;
+  --color-text-pararaph: #d1caca;
 }
 
 .light {
@@ -36,4 +38,6 @@
   --color-border-primary: #000000;
   --color-text-hoverblue: #317dfff2;
   --color-border-secondary: #cfcdd2;
+  --color-bg-icon: #0629c7;
+  --color-text-pararaph: #d1caca;
 }

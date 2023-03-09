@@ -152,7 +152,7 @@ const Navbar = () => {
           <h2 className="text-xl">Connect with me</h2>
           <a
             href="https://github.com/a-ziz"
-            className="cursor-pointer text-4xl hover:bg-[#000000] p-1 rounded-full hover:text-[#679cfe]"
+            className="cursor-pointer text-4xl rounded-full hover:bg-icon hover:text-[#ffffff]"
             target="_blank"
             rel="noreferrer"
           >
@@ -160,7 +160,7 @@ const Navbar = () => {
           </a>
           <a
             href="https://www.linkedin.com/in/azizahmed-dev/"
-            className="cursor-pointer text-4xl hover:bg-[#000000] p-1 hover:text-[#679cfe]"
+            className="cursor-pointer text-4xl hover:bg-icon hover:text-[#ffffff]"
             target="_blank"
             rel="noreferrer"
           >

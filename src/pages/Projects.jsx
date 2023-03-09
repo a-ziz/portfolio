@@ -5,14 +5,18 @@ import Contact from "./Contact";
 const Projects = () => {
   return (
     <div className="app-style py-2 m-4 " id="projects">
-      <span className="flex mx-auto font-bold text-3xl mb-8 border-b-4 border-sky-600 rounded-sm w-[220px]">
+      <span className="flex mx-auto font-bold text-3xl sm:mb-8 border-b-4 border-sky-600 rounded-sm w-[220px]">
         Recent Projects
       </span>
       <div className="grid md:grid-cols-2 gap-6 m-2">
         <Project
+          src="https://cryptolist-8c1cd.web.app/"
+          title="Cryptolist"
           name="Crypto Coin Watch"
           description="This is a react project created with firebase authentication, users can view list of crypto coins and check the current trending coins. Users can also create an account to sign in and save crypto coins to their list. Users can view the list of crypto coins later."
           technologies="React, TailwindCSS, Firebase"
+          github="https://github.com/a-ziz/service-site"
+          demo="https://cryptolist-8c1cd.web.app/"
         />
         <Project
           name="Photography Website"

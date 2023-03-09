@@ -7,6 +7,7 @@ module.exports = {
         primary: "var(--color-bg-primary)",
         secondary: "var(--color-bg-secondary)",
         button: "var(--color-bg-button)",
+        icon: "var(--color-bg-icon)",
       },
       textColor: {
         accent: "var(--color-text-accent)",
@@ -14,6 +15,7 @@ module.exports = {
         secondary: "var(--color-text-secondary)",
         btnText: "var(--color-bg-secondary)",
         hoverblue: "var(--color-text-hoverblue)",
+        pararaph: "var(--color-text-pararaph)",
       },
       borderColor: {
         primary: "var(--color-text-primary)",
