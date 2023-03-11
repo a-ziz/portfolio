@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <div className="app-style py-2 my-6">
       <h1 className="mx-auto font-bold text-center py-4 text-2xl border-solid border-b-2 border-sky-600 rounded-sm w-[260px]">
-        Get In Touch With Me
+        Get In Touch
       </h1>
       <form
         ref={form}

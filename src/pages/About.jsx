@@ -12,11 +12,12 @@ const About = () => {
           <p className="font-thin py-8 sm:text-2xl sm:leading-[44px]">
             I am a motivated recent Information Technology Graduate with web
             development experience. My focus is building fast, unbreakable,
-            responsive and elegant JavaScript and React websites. I am open to
-            new opportunities to grow my front-end development skills in an
-            innovative environment. I am currently a freelance web developer
-            based in Buffao, NY, and would love to work at a company whose
-            ideals and mission line up well with my interests and passions.
+            responsive and elegant JavaScript websites and web applications. I
+            am open to new opportunities to grow my front-end development skills
+            in an innovative environment. I am currently a freelance web
+            developer based in Buffao, NY, and would love to work at a company
+            whose ideals and mission line up well with my interests and
+            passions.
           </p>
         </div>
         <div className="max-w-7xl my-12 mx-auto sm:w-[70%] grid grid-cols-9 text-white">

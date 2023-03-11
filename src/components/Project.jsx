@@ -10,12 +10,7 @@ const Project = (props) => {
   return (
     <div className="p-4 border-b-2 border-secondary shadow-[0_2px_10px_-4px_rgba(0,0,0,0.3)] rounded-sm">
       <div>
-        <iframe
-          src={props.src}
-          height="300px"
-          width="100%"
-          title={props.title}
-        />
+        <img src={props.imgSrc} alt={props.imgAlt} />
       </div>
       <h2 className={styles.h1Text}>{props.name}</h2>
       <div className={styles.border}></div>
