@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import blogWebsite from "../assets/blogwebsite.png";
 import singlePageWebsite from "../assets/data_service_website.png";
 import cryptoWebsite from "../assets/crypto_website.png";
+import todoApp from "../assets/todo_app.png";
 
 const Projects = () => {
   return (
@@ -16,8 +17,8 @@ const Projects = () => {
           imgSrc={cryptoWebsite}
           imgAlt="Crypto Coin Website"
           name="Crypto Coin Watch"
-          description="This is a react project created with firebase authentication, users can view list of crypto coins and check the current trending coins. Users can also create an account to sign in and save crypto coins to their list. Users can view the list of crypto coins later."
-          technologies="React, TailwindCSS, Firebase"
+          description="This is a crypto API app, displayed crypto coins can be saved and viewed later by logging into your account."
+          technologies="React, TailwindCSS, Firebase, REST API"
           github="https://github.com/a-ziz/service-site"
           demo="https://cryptolist-8c1cd.web.app/"
         />
@@ -34,17 +35,19 @@ const Projects = () => {
           name="Blogs Website"
           imgSrc={blogWebsite}
           imgAlt="Blog Website"
-          description="This is a blogs website that consists of blog posts that can be clicked to viewed. Content creator can edit the blogs easily through ContentFul CMS"
+          description="This is a blogs website created with Gatsby Framework that consists of blog posts which are managed through Contentful CMS."
           technologies="React, SCSS, Gatsby, GraphQL, Contentful CMS"
           github="https://github.com/"
           demo="https://azizblogs.netlify.app/blog/"
         />
         <Project
-          name="Photography Website"
-          description="This is a photography website that displays an album, photographer's information and contact to services. "
-          technologies="HTML5, CSS3, JavaScript"
-          github="https://github.com/"
-          demo="http://www.photography"
+          imgSrc={todoApp}
+          imgAlt="Todo App"
+          name="CRUD Todo App"
+          description="A react and firebase todo app, firebase database is used to implement CRUD operations"
+          technologies="React, TailwindCSS, Firebase"
+          github="https://github.com/a-ziz/todo-app"
+          demo="https://todo-app-react-tailwindcss.web.app/"
         />
       </div>
       <div>
@@ -74,11 +77,6 @@ const Projects = () => {
             github="https://github.com/"
             demo="http://www.photography"
           />
-          {/* <Project
-            name="Command Line Book Library"
-            description="A C++ command line project that searches, updates books by title, author and ISBN"
-            technologies="C++"
-          /> */}
         </div>
       </div>
       <div id="contact">

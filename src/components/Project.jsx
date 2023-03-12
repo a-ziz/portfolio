@@ -10,18 +10,23 @@ const Project = (props) => {
   return (
     <div className="p-4 border-b-2 border-secondary shadow-[0_2px_10px_-4px_rgba(0,0,0,0.3)] rounded-sm">
       <div>
-        <img src={props.imgSrc} alt={props.imgAlt} />
+        <img
+          src={props.imgSrc}
+          alt={props.imgAlt}
+          loading="lazy"
+          style={{ height: "300px", margin: "0 auto" }}
+        />
       </div>
       <h2 className={styles.h1Text}>{props.name}</h2>
       <div className={styles.border}></div>
       <div className="text-center my-2 mx-12 font-thin">
-        {/* <img src={props.src} alt={props.alt} loading="lazy" /> */}
         {props.description}
         <div className="font-semibold my-3">
           Technologies Used:{" "}
           <span className="font-normal">{props.technologies}</span>
         </div>
       </div>
+
       <div className="flex justify-around my-8">
         <div>
           <a
