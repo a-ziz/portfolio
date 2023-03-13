@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Project from "../components/Project";
 import Contact from "./Contact";
 import blogWebsite from "../assets/blogwebsite.png";
 import singlePageWebsite from "../assets/data_service_website.png";
 import cryptoWebsite from "../assets/crypto_website.png";
 import todoApp from "../assets/todo_app.png";
+import customerMaintenance from "../assets/customer_maintenance_app.png";
+import javaCalculator from "../assets/java_calculator.png";
+import Popup from "../components/Popup";
+import RenderImage from "../components/RenderImage";
+import javaCalcDemo from "../assets/java_calculator_demo.gif";
+import javaGame from "../assets/java_game.png";
+import javaGameDemo from "../assets/java_pong_game.gif";
 
 const Projects = () => {
+  const [project1, setProject1] = useState(false);
+  const [project2, setProject2] = useState(false);
+  const [project3, setProject3] = useState(false);
+
+  // disable scroll when pop up is opened
+  const disableScroll = () => {
+    document.body.style = "overflow: hidden";
+  };
+
   return (
     <div className="app-style py-2 m-4 " id="projects">
       <span className="flex mx-auto font-bold text-3xl sm:mb-8 border-b-4 border-sky-600 rounded-sm w-[220px]">
@@ -55,30 +71,177 @@ const Projects = () => {
           Other Projects
         </span>
         <div className="grid md:grid-cols-2 gap-6 m-2">
-          <Project
-            name="VB.NET Project"
-            description="in this project I made a customer invoice application using Visual Basic on .NET framework. This project uses the CRUD method to create a customer, customer's invoices, and it includes date/time ."
-            technologies="Visual Basic, XML database, C#, .NET Framework"
-            github="https://github.com/"
-            demo="http://www.photography"
-          />
-          <Project
-            name="Java Calculator GUI APP"
-            description="A Java Calculator GUI APP using Java library"
-            technologies="Java, Java Library"
-            github="https://github.com/"
-            demo="http://www.photography"
-          />
+          <div className="p-4 border-b-2 border-secondary shadow-[0_2px_10px_-4px_rgba(0,0,0,0.3)] rounded-sm">
+            <div>
+              <img
+                src={customerMaintenance}
+                alt="Customer Maintenance App"
+                loading="lazy"
+                style={{ height: "300px", width: "90%", margin: "0 auto" }}
+              />
+            </div>
+            <h2 className="text-xl text-center m-2 font-semibold">
+              Customer Maintenance App
+            </h2>
+            <div className="flex mx-auto rounded-full max-w-[100px] py-1 my-3 bg-gradient-to-tr from-[#4674eb] via-[#95f4fc] to-[#3e05ff]"></div>
+            <div className="text-center my-2 mx-12 font-thin">
+              This is a customer invoice app using Visual Basic and .NET
+              framework. Using the CRUD method to manage customers and their
+              information using XML database.
+              <div className="font-semibold my-3">
+                Technologies Used:
+                <span className="font-normal">
+                  Visual Basic, XML database, C#, .NET Framework
+                </span>
+              </div>
+            </div>
+            <div className="flex justify-around my-8 items-center">
+              <div>
+                <a
+                  className="bg-button text-white rounded-xl py-2 px-5 hover:bg-[#294471]"
+                  href="#/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+              <div>
+                <button
+                  className="bg-button text-white rounded-xl py-2 px-5 hover:bg-[#294471]"
+                  onClick={() => {
+                    setProject1(true);
+                    disableScroll();
+                  }}
+                >
+                  Demo
+                </button>
+                <Popup trigger={project1} setTrigger={setProject1}>
+                  <RenderImage
+                    imageSrc={customerMaintenance}
+                    imageAlt="Customer Maintenance"
+                  />
+                  <h1 className="text-center mt-4 text-xl">
+                    Customer Maintenance Demo
+                  </h1>
+                </Popup>
+              </div>
+            </div>
+          </div>
+          {/* Java calculator container */}
+          <div className="p-4 border-b-2 border-secondary shadow-[0_2px_10px_-4px_rgba(0,0,0,0.3)] rounded-sm">
+            <div>
+              <img
+                src={javaCalculator}
+                alt="Java calculator"
+                loading="lazy"
+                style={{ height: "300px", margin: "0 auto" }}
+              />
+            </div>
+            <h2 className="text-xl text-center m-2 font-semibold">
+              Java Calculator
+            </h2>
+            <div className="flex mx-auto rounded-full max-w-[100px] py-1 my-3 bg-gradient-to-tr from-[#4674eb] via-[#95f4fc] to-[#3e05ff]"></div>
+            <div className="text-center my-2 mx-12 font-thin">
+              A simple Java Calculator using Java Swing library
+              <div className="font-semibold my-3">
+                Technologies Used:
+                <span className="font-normal">Java, Java Swing Library</span>
+              </div>
+            </div>
+            <div className="flex justify-around my-8 items-center">
+              <div>
+                <a
+                  className="bg-button text-white rounded-xl py-2 px-5 hover:bg-[#294471]"
+                  href="#/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+              <div>
+                <button
+                  className="bg-button text-white rounded-xl py-2 px-5 hover:bg-[#294471]"
+                  onClick={() => {
+                    setProject2(true);
+                    disableScroll();
+                  }}
+                >
+                  Demo
+                </button>
+                <Popup trigger={project2} setTrigger={setProject2}>
+                  <RenderImage
+                    imageSrc={javaCalcDemo}
+                    imageAlt="Customer Maintenance"
+                  />
+                  <h1 className="text-center mt-4 text-xl">
+                    Java Calculator Demo
+                  </h1>
+                </Popup>
+              </div>
+            </div>
+          </div>
 
-          <Project
-            name="Java Bouncing Ball Game"
-            description="Bouncing Ball Game using Java GUI library, a ball will be bouncing on the walls and player must avoid it touching the bottom of screen to score points"
-            technologies="Java, Java library"
-            github="https://github.com/"
-            demo="http://www.photography"
-          />
+          {/* Java bouncing ball container  */}
+          <div className="p-4 border-b-2 border-secondary shadow-[0_2px_10px_-4px_rgba(0,0,0,0.3)] rounded-sm">
+            <div>
+              <img
+                src={javaGame}
+                alt="Java Pong Game"
+                loading="lazy"
+                style={{ height: "300px", margin: "0 auto" }}
+              />
+            </div>
+            <h2 className="text-xl text-center m-2 font-semibold">
+              Java Pong Game
+            </h2>
+            <div className="flex mx-auto rounded-full max-w-[100px] py-1 my-3 bg-gradient-to-tr from-[#4674eb] via-[#95f4fc] to-[#3e05ff]"></div>
+            <div className="text-center my-2 mx-12 font-thin">
+              Java Pong game using Java Swing library, a ball can be released by
+              player and player must hit the ball with the paddle and avoid
+              letting the ball touch the wall to score point.
+              <div className="font-semibold my-3">
+                Technologies Used:
+                <span className="font-normal">Java, Java Swing Library</span>
+              </div>
+            </div>
+            <div className="flex justify-around my-8 items-center">
+              <div>
+                <a
+                  className="bg-button text-white rounded-xl py-2 px-5 hover:bg-[#294471]"
+                  href="#/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+              <div>
+                <button
+                  className="bg-button text-white rounded-xl py-2 px-5 hover:bg-[#294471]"
+                  onClick={() => {
+                    setProject3(true);
+                    disableScroll();
+                  }}
+                >
+                  Demo
+                </button>
+                <Popup trigger={project3} setTrigger={setProject3}>
+                  <RenderImage
+                    imageSrc={javaGameDemo}
+                    imageAlt="Customer Maintenance"
+                  />
+                  <h1 className="text-center mt-4 text-xl">
+                    Java Pong Game Demo
+                  </h1>
+                </Popup>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div id="contact">
         <Contact />
       </div>

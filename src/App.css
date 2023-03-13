@@ -1,3 +1,39 @@
 .main {
   align-items: center;
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #1c1e21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 70px;
+  background-color: #191b1e;
+}
+
+.popup-inner img {
+  min-height: 400px;
+}
+
+.popup-inner  .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #475dc2;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
+  -ms-border-radius: 15%;
+  -o-border-radius: 15%;
+}

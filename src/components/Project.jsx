@@ -27,10 +27,10 @@ const Project = (props) => {
         </div>
       </div>
 
-      <div className="flex justify-around my-8">
+      <div className="flex justify-around my-8 items-center">
         <div>
           <a
-            className="bg-button text-white  rounded-xl py-2 px-5 hover:bg-[#294471]"
+            className="bg-button text-white rounded-xl py-2 px-5 hover:bg-[#294471]"
             href={props.github}
             target="_blank"
             rel="noreferrer"
