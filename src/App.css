@@ -28,7 +28,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #475dc2;
+  background-color: #317dfff2;
   color: #FFFFFF;
   padding: 10px;
   border-radius: 15%;
@@ -36,4 +36,8 @@
   -moz-border-radius: 15%;
   -ms-border-radius: 15%;
   -o-border-radius: 15%;
+}
+
+.close-btn:hover {
+  background-color: #475dc2;
 }

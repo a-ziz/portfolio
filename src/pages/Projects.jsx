@@ -12,6 +12,7 @@ import RenderImage from "../components/RenderImage";
 import javaCalcDemo from "../assets/java_calculator_demo.gif";
 import javaGame from "../assets/java_game.png";
 import javaGameDemo from "../assets/java_pong_game.gif";
+import customerMaintenanceDemo from "../assets/customer_maintenance_demo.gif";
 
 const Projects = () => {
   const [project1, setProject1] = useState(false);
@@ -118,10 +119,10 @@ const Projects = () => {
                 </button>
                 <Popup trigger={project1} setTrigger={setProject1}>
                   <RenderImage
-                    imageSrc={customerMaintenance}
+                    imageSrc={customerMaintenanceDemo}
                     imageAlt="Customer Maintenance"
                   />
-                  <h1 className="text-center mt-4 text-xl">
+                  <h1 className="text-center mt-4 text-xl text-white">
                     Customer Maintenance Demo
                   </h1>
                 </Popup>
@@ -175,7 +176,7 @@ const Projects = () => {
                     imageSrc={javaCalcDemo}
                     imageAlt="Customer Maintenance"
                   />
-                  <h1 className="text-center mt-4 text-xl">
+                  <h1 className="text-center mt-4 text-xl text-white">
                     Java Calculator Demo
                   </h1>
                 </Popup>
@@ -232,7 +233,7 @@ const Projects = () => {
                     imageSrc={javaGameDemo}
                     imageAlt="Customer Maintenance"
                   />
-                  <h1 className="text-center mt-4 text-xl">
+                  <h1 className="text-center mt-4 text-xl text-white">
                     Java Pong Game Demo
                   </h1>
                 </Popup>
